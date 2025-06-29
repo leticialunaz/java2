@@ -1,12 +1,14 @@
 package minicarregadeiras;
 
-public class MiniCarregadeira {
+import acessorios.AcessorioAbstract;
+
+public class MiniCarregadeira implements Comparable<MiniCarregadeira>{
 
 	protected double potencia;
 	protected double capacidade; 
 	protected double peso;
 	protected int id;
-	protected String acessorio;
+	protected AcessorioAbstract acessorio;
 	protected String aplicacao;
 	
 	
@@ -69,12 +71,15 @@ public class MiniCarregadeira {
 
 
 	public String getAcessorio() {
-		return acessorio;
+		return acessorio.toString();
 	}
 
 
-	public void setAcessorio(String acessorio) {
+	public void setAcessorio(AcessorioAbstract acessorio) {
 		this.acessorio = acessorio;
+		this.peso += acessorio.getPeso();
+		this.capacidade += acessorio.getCapacidade();
+		this.aplicacao = acessorio.getAplicacao();
 	}
 
 
@@ -85,6 +90,21 @@ public class MiniCarregadeira {
 
 	public void setAplicacao(String aplicacao) {
 		this.aplicacao = aplicacao;
+	}
+
+
+	@Override
+	public int compareTo(MiniCarregadeira o) {
+		if(o == null) {
+	        throw new NullPointerException("Objeto a ser comparado não pode ser nulo");
+		}
+		if(getId() == null && o.getId() == null) {
+			
+		}
+		
+		
+		
+		return getId().compareTo(o.getId());
 	}
 	
 	

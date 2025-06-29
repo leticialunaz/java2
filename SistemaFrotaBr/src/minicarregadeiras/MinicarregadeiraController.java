@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MinicarregadeiraController {
 
-	private ArrayList<MiniCarregadeira> minicarregadeiras;
+	public ArrayList<MiniCarregadeira> minicarregadeiras;
 	private int controlador;
 	
 	public MinicarregadeiraController() {
@@ -30,5 +30,9 @@ public class MinicarregadeiraController {
 			throw new IllegalArgumentException("Identificador inválido");
 		}
 		return this.minicarregadeiras.get(id).toString();
+	}
+	
+	public String consultar(String aplicacao) {
+		
 	}
 }
