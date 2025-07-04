@@ -1,0 +1,1 @@
+Resolução de questões disponíveis no site tst - eda, referentes a disciplina Laboratório de Estruturas de Dados e Algoritmos do curso de Ciência da Computação da Universidade Federal de Campina Grande.
