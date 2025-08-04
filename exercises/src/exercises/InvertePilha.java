@@ -57,7 +57,8 @@ class Fila{
 			fila[head] = value;
 			this.size++;
 		} else {
-			this.fila[++tail] = value;
+			this.tail++;
+			this.fila[tail] = value;
 			this.size++;
 		}
 	}
