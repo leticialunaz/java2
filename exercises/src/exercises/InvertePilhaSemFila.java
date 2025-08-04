@@ -31,7 +31,7 @@ public class InvertePilhaSemFila {
 	}
 
 	private static Pilha desempilha(Pilha pilha) {
-		Pilha auxiliar = new Pilha(pilha.length);
+		Pilha auxiliar = new Pilha(pilha.topo + 1);
 		while(!pilha.isEmpty()) {
 			auxiliar.push(pilha.pop());
 		}
@@ -41,26 +41,26 @@ public class InvertePilhaSemFila {
 	
 }
 
-class Pilha{
-	public int length;
-	int topo;
-	int[] pilha;
-	
-	Pilha(int capacidade){
-		this.pilha = new int[capacidade];
-		this.topo = -1;
-		this.length = capacidade;
-	}
-	
-	boolean isEmpty() {
-		return topo == -1;
-	}
-	
-	void push(int value) {
-		pilha[++topo] = value;
-	}
-	
-	int pop() {
-		return pilha[topo--];
-	}
-}
+//class Pilha{
+//	public int length;
+//	int topo;
+//	int[] pilha;
+//	
+//	Pilha(int capacidade){
+//		this.pilha = new int[capacidade];
+//		this.topo = -1;
+//		this.length = capacidade;
+//	}
+//	
+//	boolean isEmpty() {
+//		return topo == -1;
+//	}
+//	
+//	void push(int value) {
+//		pilha[++topo] = value;
+//	}
+//	
+//	int pop() {
+//		return pilha[topo--];
+//	}
+//}
