@@ -1,0 +1,3 @@
+[submodule "jogoDeCartas"]
+	path = jogoDeCartas
+	url = https://github.com/leticialunaz/Java-exercises.git
