@@ -48,36 +48,36 @@ public class ElementAtPilha {
 	}
 }
 
-class Pilha{
-	
-	int topo;
-	int[] pilha;
-	
-	public Pilha(int capacidade) {
-		this.topo = -1;
-		this.pilha = new int[capacidade]; 
-	}
-	
-	
-	public int size() {
-		return topo + 1;
-	}
-
-
-	public boolean isEmpty() {
-		return this.topo == -1;
-	}
-	
-	public void push(int valor) {
-		pilha[++topo] = valor;
-	}
-	
-	public int pop() {
-		return pilha[topo--];
-	}
-	
-	public int peek() {
-		return pilha[topo];
-	}
-	
-}
+//class Pilha{
+//	
+//	int topo;
+//	int[] pilha;
+//	
+//	public Pilha(int capacidade) {
+//		this.topo = -1;
+//		this.pilha = new int[capacidade]; 
+//	}
+//	
+//	
+//	public int size() {
+//		return topo + 1;
+//	}
+//
+//
+//	public boolean isEmpty() {
+//		return this.topo == -1;
+//	}
+//	
+//	public void push(int valor) {
+//		pilha[++topo] = valor;
+//	}
+//	
+//	public int pop() {
+//		return pilha[topo--];
+//	}
+//	
+//	public int peek() {
+//		return pilha[topo];
+//	}
+//	
+//}

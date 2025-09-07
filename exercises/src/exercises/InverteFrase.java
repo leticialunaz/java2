@@ -37,36 +37,36 @@ public class InverteFrase {
 
 }
 
-class Pilha{
-	
-	int topo;
-	String[] pilha;
-	
-	public Pilha(int capacidade) {
-		this.topo = -1;
-		this.pilha = new String[capacidade]; 
-	}
-	
-	
-	public int size() {
-		return topo + 1;
-	}
-
-
-	public boolean isEmpty() {
-		return this.topo == -1;
-	}
-	
-	public void push(String chave) {
-		pilha[++topo] = chave;
-	}
-	
-	public String pop() {
-		return pilha[topo--];
-	}
-	
-	public String peek() {
-		return pilha[topo];
-	}
-}
-	
+//class Pilha{
+//	
+//	int topo;
+//	String[] pilha;
+//	
+//	public Pilha(int capacidade) {
+//		this.topo = -1;
+//		this.pilha = new String[capacidade]; 
+//	}
+//	
+//	
+//	public int size() {
+//		return topo + 1;
+//	}
+//
+//
+//	public boolean isEmpty() {
+//		return this.topo == -1;
+//	}
+//	
+//	public void push(String chave) {
+//		pilha[++topo] = chave;
+//	}
+//	
+//	public String pop() {
+//		return pilha[topo--];
+//	}
+//	
+//	public String peek() {
+//		return pilha[topo];
+//	}
+//}
+//	
