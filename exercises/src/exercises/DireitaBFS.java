@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class DireitaBFS {
+class DireitaBFS {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
